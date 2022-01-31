@@ -1,0 +1,8 @@
+# Files/directories that will not be tracked by git
+
+# MacOS temp files
+.DS_Store
+**/.DS_Store
+
+# Java class files
+target/
