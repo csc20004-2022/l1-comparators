@@ -20,7 +20,7 @@ class MyComparator1 implements Comparator<String> {
     String first_Str = str1 ;
     String second_Str = str2;
 
-    return second_Str.compareTo(first_Str);
+    return -second_Str.compareTo(first_Str);
     }
 }
 
@@ -56,7 +56,7 @@ public class TreeSetDemo {
         // the comparator ()
         // You can experiment with the other provided Comparator (MyComparator2)
         // or by implementing your own
-        TreeSet<String> tree_set = new TreeSet<String>(new MyComparator1());
+        TreeSet<String> tree_set = new TreeSet<String>(new MyComparator2());
 
         tree_set.add("hello");
         tree_set.add("cya");
